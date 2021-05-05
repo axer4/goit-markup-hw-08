@@ -1,0 +1,27 @@
+.social-icons-footer-list__item {
+  list-style: none;
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+}
+
+.social-icon-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+}
+
+.social-icon-footer__link .social-footer-icon {
+  fill: $main-bg-color;
+}

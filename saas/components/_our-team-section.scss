@@ -1,0 +1,27 @@
+.our-team-section {
+  background: $buttons-bg-color;
+}
+.our-team-section--position {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-team-section__heading {
+  margin-bottom: 50px;
+  margin-top: 0px;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: $h1-h2-h3-color;
+}
+
+@media screen and (max-width: 1200px) {
+  .our-team-section--position {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .our-team-section {
+    width: 480px;
+  }
+}

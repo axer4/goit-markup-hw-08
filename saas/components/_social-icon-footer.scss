@@ -1,0 +1,25 @@
+.social-icons-footer--position {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  flex-basis: calc((50% - 45px) / 2);
+}
+.social-icons-footer__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.social-icons-footer__heading {
+  font-size: 14px;
+  line-height: 1.1;
+  margin: 0;
+  padding-bottom: 20px;
+  color: $main-bg-color;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .social-icons-footer--position {
+    margin-left: 0;
+    margin-bottom: 102px;
+  }
+}

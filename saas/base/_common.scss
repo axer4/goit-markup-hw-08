@@ -1,0 +1,85 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.hover-focus:hover,
+.hover-focus:focus {
+  color: $hover-color;
+}
+.button-styles {
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  background: $hover-color;
+  color: $main-bg-color;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.87;
+  border-radius: 4px;
+}
+.button-styles:hover,
+.button-styles:focus {
+  background: $make-an-order-hover-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.navigation__links {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: $h1-h2-h3-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.current {
+  color: $hover-color;
+}
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: $hover-color;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.modal__icons-hover:hover {
+  fill: $hover-color;
+}
+.modal__inputs--styles:hover {
+  border-color: $hover-color;
+}

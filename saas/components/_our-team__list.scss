@@ -1,0 +1,38 @@
+.our-team__icon-list--position {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 16px;
+}
+.our-team__social-icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.our-team__icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+    border-radius: 50%;
+  }
+  &:hover .our-team__social-icon,
+  &:focus .our-team__social-icon {
+    fill: $main-bg-color;
+  }
+}
+.our-team__icon-item {
+  list-style: none;
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+}

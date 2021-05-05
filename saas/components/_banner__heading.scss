@@ -1,0 +1,35 @@
+.banner__heading {
+  font-size: 26px;
+  line-height: 1.61;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $main-bg-color;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .banner__heading {
+    font-size: 26px;
+    width: 360px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner__heading {
+    font-size: 26px;
+    width: 360px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__heading {
+    font-size: 44px;
+    width: 696px;
+    line-height: 1.36;
+  }
+}

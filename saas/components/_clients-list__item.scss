@@ -1,0 +1,30 @@
+.clients-list__item {
+  list-style: none;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  --grid-item: 2;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: $hover-color;
+  }
+}
+@media screen and(min-width:480px) {
+  .clients-list__item {
+    --grid-item: 2;
+  }
+}
+@media screen and(min-width:768px) {
+  .clients-list__item {
+    --grid-item: 3;
+  }
+}
+@media screen and(min-width:1200px) {
+  .clients-list__item {
+    --grid-item: 6;
+  }
+}
