@@ -82,6 +82,7 @@
 }
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .mobile-menu {
-    height: 796px;
+    height: 100vh;
+    overflow: auto;
   }
 }
